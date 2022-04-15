@@ -31,7 +31,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    '3.26.63.195'
+    '3.26.63.195',
+    '127.0.0.1',
 ]
 
 # Application definition
@@ -90,7 +91,8 @@ DATABASES = {
         'NAME': 'django_db', # DB명
         'USER': 'python', # 데이터베이스 계정
         'PASSWORD':'python', # 계정 비밀번호
-        'HOST':'djangomysql.co3yx3ayxu1q.us-east-1.rds.amazonaws.com', # 데이테베이스 IP
+        # 'HOST':'localhost', # 데이테베이스 IP
+        'HOST':'djangomysql.c28c1htlg25e.ap-southeast-2.rds.amazonaws.com',
         'PORT':'3306', # 데이터베이스 port
     }
 }
